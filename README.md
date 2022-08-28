@@ -9,7 +9,7 @@ On the query side, there will be an event consumer that subscribes to the accoun
 
 Client can, for example, make a find all accounts query request over to the bank account query restful API.
 
-![pic-01](./architecture/architecture_pic.jpg)
+![pic-01](https://raw.githubusercontent.com/AdilhanKaikenov/bank-account-project/main/architecture/architecture_pic.jpg)
 
 
 - Java 11
