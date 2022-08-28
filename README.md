@@ -33,5 +33,5 @@ docker run -it -d --name mysql-container -p 3306:3306 --network techbankNet -e M
 ``
 
 ``
-docker run -it -d --name adminer -p 8085:8085 --network techbankNet -e ADMINER_DEFAULT_SERVER=mysql-container --restart always adminer:latest
+docker run -it -d --name adminer -p 8080:8080 --network techbankNet -e ADMINER_DEFAULT_SERVER=mysql-container --restart always adminer:latest
 ``
