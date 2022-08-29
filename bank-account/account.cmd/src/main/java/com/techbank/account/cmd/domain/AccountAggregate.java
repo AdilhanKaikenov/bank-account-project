@@ -26,6 +26,10 @@ public class AccountAggregate extends AggregateRoot {
     raiseEvent(build);
   }
 
+  public double getBalance() {
+    return balance;
+  }
+
   public void depositFunds(double amount) {
     if (!this.active) {
       throw new IllegalStateException("Funds cannot be deposited into a closed account!");

@@ -5,5 +5,5 @@ import lombok.Data;
 
 @Data
 public class WithdrawFundsCommand extends BaseCommand {
-  private String amount;
+  private double amount;
 }
