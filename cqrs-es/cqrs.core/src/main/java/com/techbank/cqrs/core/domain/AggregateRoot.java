@@ -30,7 +30,7 @@ public abstract class AggregateRoot {
     return this.changes;
   }
 
-  public void markChangesUncommitted() {
+  public void markChangesAsCommitted() {
     this.changes.clear();
   }
 
