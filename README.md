@@ -7,6 +7,8 @@ The events store will be responsible for persisting a new events to the event st
 
 On the query side, there will be an event consumer that subscribes to the account event topic and once a new instance of the account event is published to Kafka. It will consume it from Kafka and then pass it to the event handler. The event handler will then be responsible for handling the account event, whereby it will build up an account entity that it will persist to the read database.
 
+The event handler resides on the query side of CQRS and affects the read database, while the event sourcing handler resides on the command side and ultimately impacts the right database or event store.
+
 Client can, for example, make a find all accounts query request over to the bank account query restful API.
 
 ![pic-01](https://raw.githubusercontent.com/AdilhanKaikenov/bank-account-project/main/architecture/architecture_pic.jpg)
