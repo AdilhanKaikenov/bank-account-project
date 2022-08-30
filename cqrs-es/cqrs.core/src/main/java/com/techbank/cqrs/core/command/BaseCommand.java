@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
 public abstract class BaseCommand extends Message {
 
   public BaseCommand(String id) {
