@@ -4,6 +4,7 @@ import com.techbank.account.cmd.api.command.CloseAccountCommand;
 import com.techbank.account.cmd.api.command.CommandHandler;
 import com.techbank.account.cmd.api.command.DepositFundsCommand;
 import com.techbank.account.cmd.api.command.OpenAccountCommand;
+import com.techbank.account.cmd.api.command.RestoreReadDbCommand;
 import com.techbank.account.cmd.api.command.WithdrawFundsCommand;
 import com.techbank.cqrs.core.infrastructure.CommandDispatcher;
 import javax.annotation.PostConstruct;
@@ -31,6 +32,7 @@ public class CommandApplication {
 		commandDispatcher.registerHandler(DepositFundsCommand.class, commandHandler::handle);
 		commandDispatcher.registerHandler(WithdrawFundsCommand.class, commandHandler::handle);
 		commandDispatcher.registerHandler(CloseAccountCommand.class, commandHandler::handle);
+		commandDispatcher.registerHandler(RestoreReadDbCommand.class, commandHandler::handle);
 	}
 
 }
